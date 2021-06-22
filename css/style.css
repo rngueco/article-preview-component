@@ -24,11 +24,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2em 0;
+    padding: 2em;
 }
 
 .article-card {
-    width: 85vw;
+    max-width: 375px;
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
@@ -37,6 +37,7 @@ main {
 }
     .article-card__image {
         background-image: url('../images/drawers.jpg');
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -133,6 +134,7 @@ footer {
 @media (min-width: 800px) {
     .article-card {
         width: min(85vw, 800px);
+        max-width: 800px;
         display: flex;
         flex-wrap: nowrap;
         overflow: visible;
