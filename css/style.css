@@ -127,6 +127,62 @@ footer {
     color: var(--dark-grayish-blue);
 }
 
+@media (min-width: 800px) {
+    .article-card {
+        width: min(85vw, 800px);
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: visible;
+    }
+        .article-card__image {
+            width: 600px;
+            height: auto;
+            flex-shrink: 1;
+            border-bottom-left-radius: inherit;
+            border-top-left-radius: inherit;
+        }
+        .article-card__content {
+            padding: 2.5em;
+            flex-grow: 1;
+        }
+            .article-card__title {
+                font-size: 1.5em;
+            }
+            .article-card__summary {
+                margin-bottom: 1.5em;
+            }
+
+    .share-options {
+        padding: 1em 2em;
+        line-height: 1em;
+        width: auto;
+        right: calc(2.5em - 96px);
+        bottom: calc(32px + 5em);
+        border-radius: 8px;
+        box-shadow: 0px 3px 8px 1px hsla(217, 19%, 35%, 0.2);
+    }
+        .share-options span {
+            padding: 0 0.5em;
+        }
+        .share-options .icons-wrapper {
+            justify-content: space-between;
+            padding: 0 0.5em;
+        }
+        .share-options .share-icon {
+            display: none;
+        }
+        .share-options::before {
+            content: "";
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            left: calc(115px - 1em);
+            bottom: -10px;
+            transform: rotate(45deg);
+            background-color: var(--dark-grayish-blue);
+        }
+}
+
 .hidden {
     display: none;
 }
