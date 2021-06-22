@@ -159,8 +159,9 @@ footer {
         padding: 1em 2em;
         line-height: 1em;
         width: auto;
-        right: calc(2.5em - 96px);
-        bottom: calc(32px + 5em);
+        right: calc(2.5em + 17.5px); /* Padding + half of share button to get to the center of button */
+        bottom: calc(32px + 5em); /* Height of div + top and bottom padding */
+        transform: translateX(50%);
         border-radius: 8px;
         box-shadow: 0px 3px 8px 1px hsla(217, 19%, 35%, 0.2);
     }
@@ -179,9 +180,9 @@ footer {
             height: 20px;
             width: 20px;
             position: absolute;
-            left: calc(115px - 1em);
+            left: 50%;
             bottom: -10px;
-            transform: rotate(45deg);
+            transform: translateX(-50%) rotate(45deg);
             background-color: var(--dark-grayish-blue);
         }
 }
