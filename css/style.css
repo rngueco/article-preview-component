@@ -100,6 +100,8 @@ main {
     width: 100%;
     position: absolute;
     bottom: 0;
+
+    animation: fadein 0.4s ease;
 }
     .share-options span {
         text-transform: uppercase;
@@ -193,3 +195,12 @@ footer {
     .dark-button svg path {
         fill: white;
     }
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
